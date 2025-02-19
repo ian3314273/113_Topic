@@ -1,6 +1,6 @@
 """
 Author: Cheng-Chun-Hsu, Yi-An-Chen
-Date: 2024/12/30
+Date: 2025/02/19
 
 The hole details of how to use this code is in Notion URL
 Please check it before you use this code
@@ -989,6 +989,7 @@ def choose_save_location():
     if save_path:
         save_path_label.config(text=save_path)
 
+# 以下皆為所有偵測相關的 Code
 def preprocess_frame(frame):
     denoised_frame = cv2.GaussianBlur(frame, (5, 5), 0)
 
